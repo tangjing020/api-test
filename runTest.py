@@ -12,6 +12,9 @@ from common.logger import Logger
 #from apscheduler.schedulers.blocking import BlockingScheduler
 #import pythoncom
 
+
+log.info(configPath.base_dir)
+
 class AllTest:#
 
     def __init__(self):
