@@ -35,6 +35,8 @@ class AllTest:#
         读取caselist.txt文件中的用例名称，获取需要执行的测试用例,#号开头则不用执行
         :return:
         """
+        log.info(configPath.base_dir)
+        log.info(self.caseListFile)
         fb = open(self.caseListFile)
         for value in fb.readlines():
             data = str(value)
@@ -84,6 +86,7 @@ class AllTest:#
 #                runner.run(suit)
                 run = bf(suit)  # 实例化BeautifulReport模块
                 run.report(filename='report_' + str(time.strftime("%Y-%m-%d_%H-%M",time.localtime())), description='烟草项目接口测试报告',report_dir=self.reportPath)
+                log.info(self.reportPath)
                 begin_time = run.begin_time
                 end_time = run.end_time
                 all_count = int(run.testsRun)
