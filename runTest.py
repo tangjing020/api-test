@@ -35,8 +35,6 @@ class AllTest:#
         读取caselist.txt文件中的用例名称，获取需要执行的测试用例,#号开头则不用执行
         :return:
         """
-        log.info(configPath.base_dir)
-        log.info(self.caseListFile)
         fb = open(self.caseListFile)
         for value in fb.readlines():
             data = str(value)
@@ -102,7 +100,7 @@ class AllTest:#
 
         finally:
             #清理环境, 发送测试邮件
-            File().delete_file_backup(self.reportPath, 5)
+            File().delete_file_backup(self.reportPath, 1)
             if self.email_on == 'on':
                 ConfigEmail().send_email(begin_time,end_time,all_count,success_count,failure_count,skipped_count)
                 log.info("邮件发送成功")
