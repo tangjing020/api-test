@@ -4,16 +4,13 @@ import common.HTMLTestRunner as HTMLTestRunner
 #from common.HTMLTestReportCN import HTMLTestRunner
 from BeautifulReport import BeautifulReport as bf
 import unittest
-import configPath
+from common import configPath
 from common.configEmail import ConfigEmail
 from common.readConfig import ReadConfig
 from common.file import File
 from common.logger import Logger
 #from apscheduler.schedulers.blocking import BlockingScheduler
 #import pythoncom
-
-
-log.info(configPath.base_dir)
 
 class AllTest:#
 
