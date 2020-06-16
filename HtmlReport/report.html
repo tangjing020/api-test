@@ -7159,13 +7159,13 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 5,
+    "testPass": 0,
     "testResult": [
         {
             "className": "api_test",
             "methodName": "test_01",
             "description": "template_cource_login_01_登录",
-            "spendTime": "0.733 s",
+            "spendTime": "0.258 s",
             "status": "失败",
             "log": [
                 "",
@@ -7173,10 +7173,10 @@ body.skin-3 {
                 "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
                 "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 146, in apiTest\n    raise e\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 126, in apiTest\n    self.assertEqual(httpCode, res[1])\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 146, in apiTest\n    raise e\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 126, in apiTest\n    self.assertEqual(httpCode, res[1])\n",
                 "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
                 "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n",
                 "AssertionError: 20.0 != 200\n"
@@ -7186,7 +7186,7 @@ body.skin-3 {
             "className": "api_test",
             "methodName": "test_02",
             "description": "template_cource_add_02_添加课程模板",
-            "spendTime": "0.000993 s",
+            "spendTime": "0.001 s",
             "status": "跳过",
             "log": [
                 "template_cource_add_02: 依赖的用例（depand_case）template_cource_login_01运行失败或者未运行，导致用例不执行，跳过"
@@ -7196,7 +7196,7 @@ body.skin-3 {
             "className": "api_test",
             "methodName": "test_03",
             "description": "template_cource_query_list_03_查询课程模板列表",
-            "spendTime": "0.0 s",
+            "spendTime": "0.0015 s",
             "status": "跳过",
             "log": [
                 "template_cource_query_list_03: is_run参数不为yes，用例不执行，跳过"
@@ -7206,7 +7206,7 @@ body.skin-3 {
             "className": "api_test",
             "methodName": "test_04",
             "description": "template_cource_edit_04_编辑课程模板",
-            "spendTime": "0.001 s",
+            "spendTime": "0.00401 s",
             "status": "跳过",
             "log": [
                 "template_cource_edit_04: is_run参数不为yes，用例不执行，跳过"
@@ -7216,7 +7216,7 @@ body.skin-3 {
             "className": "api_test",
             "methodName": "test_05",
             "description": "template_cource_query_05_查询课程模板列表",
-            "spendTime": "0.00101 s",
+            "spendTime": "0.001 s",
             "status": "跳过",
             "log": [
                 "template_cource_query_05: is_run参数不为yes，用例不执行，跳过"
@@ -7226,7 +7226,7 @@ body.skin-3 {
             "className": "api_test",
             "methodName": "test_06",
             "description": "template_cource_delete_06_删除课程模板",
-            "spendTime": "0.0 s",
+            "spendTime": "0.00351 s",
             "status": "跳过",
             "log": [
                 "template_cource_delete_06: 依赖的用例（depand_case）template_cource_add_02运行失败或者未运行，导致用例不执行，跳过"
@@ -7236,47 +7236,85 @@ body.skin-3 {
             "className": "api_test",
             "methodName": "test_07",
             "description": "template_cource_login_01_登录",
-            "spendTime": "0.372 s",
-            "status": "成功",
+            "spendTime": "0.204 s",
+            "status": "失败",
             "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 146, in apiTest\n    raise e\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 137, in apiTest\n    self.assertIn(check_list[i], res[0])\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 1179, in assertIn\n    self.fail(self._formatMessage(msg, standardMsg))\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 753, in fail\n    raise self.failureException(msg)\n",
+                "AssertionError: 'access_token' not found in '{\\n  \"firstUpdatePassword\": \"true\",\\n  \"userId\": \"6b63ae90-726c-11e6-99f3-00163e005637\"\\n}'\n"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_08",
             "description": "template_cource_add_02_添加课程模板",
-            "spendTime": "0.303 s",
-            "status": "成功",
+            "spendTime": "0.00703 s",
+            "status": "错误",
             "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 116, in apiTest\n    header = OperationJson().get_header(\"token.json\")\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\operationJson.py\", line 27, in get_header\n    token = self.get_data(\"token.json\")[\"access_token\"]\n",
+                "KeyError: 'access_token'\n"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_09",
             "description": "template_cource_query_list_03_查询课程模板列表",
-            "spendTime": "0.369 s",
-            "status": "成功",
+            "spendTime": "0.00601 s",
+            "status": "错误",
             "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 116, in apiTest\n    header = OperationJson().get_header(\"token.json\")\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\operationJson.py\", line 27, in get_header\n    token = self.get_data(\"token.json\")[\"access_token\"]\n",
+                "KeyError: 'access_token'\n"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_10",
             "description": "template_cource_edit_04_编辑课程模板",
-            "spendTime": "0.317 s",
-            "status": "成功",
+            "spendTime": "0.01 s",
+            "status": "错误",
             "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 105, in apiTest\n    url = HandleUrlAndBody().handle_url(self.base_url, url, global_var)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\handleUrlAndBody.py\", line 31, in handle_url\n    url = url.replace(\"${\" + var_list[i] + \"}\", var_dict[var_list[i]])\n",
+                "KeyError: 'templateCourseId'\n"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_11",
             "description": "template_cource_query_05_查询课程模板列表",
-            "spendTime": "0.0 s",
+            "spendTime": "0.00201 s",
             "status": "跳过",
             "log": [
                 "template_cource_query_05: is_run参数不为yes，用例不执行，跳过"
@@ -7286,18 +7324,27 @@ body.skin-3 {
             "className": "api_test",
             "methodName": "test_12",
             "description": "template_cource_delete_06_删除课程模板",
-            "spendTime": "0.26 s",
-            "status": "成功",
+            "spendTime": "0.00752 s",
+            "status": "错误",
             "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\testCase\\test_demo.py\", line 105, in apiTest\n    url = HandleUrlAndBody().handle_url(self.base_url, url, global_var)\n",
+                "  File \"E:\\学习\\唐菁\\git\\apiTest\\common\\handleUrlAndBody.py\", line 31, in handle_url\n    url = url.replace(\"${\" + var_list[i] + \"}\", var_dict[var_list[i]])\n",
+                "KeyError: 'templateCourseId'\n"
             ]
         }
     ],
     "testName": "烟草项目接口测试报告",
     "testAll": 12,
-    "testFail": 1,
-    "beginTime": "2020-06-09 09:14:24",
-    "totalTime": "2s",
+    "testFail": 6,
+    "beginTime": "2020-06-16 20:22:35",
+    "totalTime": "0s",
     "testSkip": 6,
     "testError": 0
 };
