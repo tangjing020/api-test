@@ -100,7 +100,7 @@ class AllTest:#
 
         finally:
             #清理环境, 发送测试邮件
-            File().delete_file_backup(self.reportPath, 1)
+            File().delete_file_backup(self.reportPath, 5)
             file1 = File().get_newest_file(self.reportPath)
             file2 = self.reportPath + '\\report.html'
             os.system('copy %s %s' % (file1,file2))
