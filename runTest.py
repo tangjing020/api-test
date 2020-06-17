@@ -110,6 +110,13 @@ class AllTest:#
             else:
                 log.info("邮件开关配置关闭，如需发送邮箱，请在配置文件配置打开")
             log.info("*********TEST END*********")
+            print("\n\n\n")
+            print("begin_time: " + begin_time)
+            print("all_count: " + str(all_count))
+            print("success_count: " + str(all_count))
+            print("failure_count: " + str(failure_count))
+            print("skipped_count: " + str(skipped_count))
+            print("\n\n\n")
             if failure_count != 0:
                 raise ValueError("failure_count = " + str(failure_count))           
             #fp.close()
