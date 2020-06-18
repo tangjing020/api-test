@@ -112,11 +112,11 @@ class AllTest:#
             log.info("*********TEST END*********")
             print("\n\n\n")
             print("用例执行结果如下：")
-            print("开始时间: " + begin_time)
             print("all_count: " + str(all_count))
             print("success_count: " + str(success_count))
             print("failure_count: " + str(failure_count))
             print("skipped_count: " + str(skipped_count))
+            print("开始时间: " + begin_time)
             print("\n\n\n")
             if failure_count != 0:
                 raise ValueError("failure_count = " + str(failure_count))           
