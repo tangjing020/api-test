@@ -112,7 +112,7 @@ class AllTest:#
             log.info("*********TEST END*********")
             print("\n\n\n")
             print("用例执行结果如下：")
-            print("begin_time: " + begin_time)
+            print("开始时间: " + begin_time)
             print("all_count: " + str(all_count))
             print("success_count: " + str(success_count))
             print("failure_count: " + str(failure_count))
