@@ -111,12 +111,12 @@ class AllTest:#
                 log.info("邮件开关配置关闭，如需发送邮箱，请在配置文件配置打开")
             log.info("*********TEST END*********")
             print("\n\n\n")
-            print("用例执行结果如下：")
-            print("all_count: " + str(all_count))
-            print("success_count: " + str(success_count))
-            print("failure_count: " + str(failure_count))
-            print("skipped_count: " + str(skipped_count))
-            print("开始时间: " + begin_time)
+            print("用例执行结果如下：\n")
+            print("总用例数: " + str(all_count))
+            print("成功用例数: " + str(success_count))
+            print("失败用例数: " + str(failure_count))
+            print("跳过用例数: " + str(skipped_count))
+  
             print("\n\n\n")
             if failure_count != 0:
                 raise ValueError("failure_count = " + str(failure_count))           
