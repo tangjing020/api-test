@@ -12,5 +12,8 @@
   "account": "18647400590",
   "accountPwd": "yc123456!",
   "courseTempName": "courseTempName",
-  "courseTempDesc": "courseTempDesc"
+  "courseTempDesc": "courseTempDesc",
+  "years": "2020",
+  "planName": "planName",
+  "planClassName": "planClassName"
 }

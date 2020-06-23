@@ -37,7 +37,7 @@ class RunMethod():
             result = result.json()
             #以字符串形式输出，ensure_ascii设置是否ascii编码，sort_keys设置a-z排序，indent设置缩进格式
             res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
-            log.info('methond: put, httpCode: %s, url: %s' % (http_code, url))
+            log.info('methond: post, httpCode: %s, url: %s' % (http_code, url))
             log.info('content={%s}' % data)
             log.info('response: %s' % res)
             return res,http_code
@@ -63,7 +63,7 @@ class RunMethod():
             http_code = result.status_code
             result = result.json()
             res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
-            log.info('methond: put, httpCode: %s, url: %s' % (http_code, url))
+            log.info('methond: get, httpCode: %s, url: %s' % (http_code, url))
             log.info('data: %s' % data)
             log.info('response: %s' % res)
             return res,http_code
@@ -89,7 +89,7 @@ class RunMethod():
             result = result.json()
             #以字符串形式输出，ensure_ascii设置是否ascii编码，sort_keys设置a-z排序，indent设置缩进格式
             res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
-            log.info('methond: put, httpCode: %s, url: %s' % (http_code, url))
+            log.info('methond: delete, httpCode: %s, url: %s' % (http_code, url))
             log.info('data: %s' % data)
             log.info('response: %s' % res)
             return res,http_code
