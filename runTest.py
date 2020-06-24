@@ -110,7 +110,7 @@ class AllTest:#
             else:
                 log.info("邮件开关配置关闭，如需发送邮箱，请在配置文件配置打开")
             log.info("*********TEST END*********")
-            print("\n\n\n\n\n\n")
+            print("\n\n\n\n\n")
             print("用例执行结果如下：\n")
             print("总用例数: " + str(all_count))
             print("成功用例数: " + str(success_count))
