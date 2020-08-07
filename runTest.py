@@ -57,7 +57,7 @@ class AllTest:#
             discover = unittest.defaultTestLoader.discover(self.caseFilePath, pattern = case_name + '.py', top_level_dir=None)
             # 将discover存入suite_module元素组
             suite_module.append(discover)
-            #log.info('suite_module:'+str(suite_module))
+
         # 判断suite_module元素组是否存在元素, 存在则循环使用discover中取出test_name，添加到测试集
         if len(suite_module) > 0:
             for suite in suite_module:
@@ -82,7 +82,9 @@ class AllTest:#
                 #调用HTMLTestRunner
 #                runner = HTMLTestRunner.HTMLTestRunner(stream=fp,verbosity=2,title='Test Report',description='Test Description')
 #                runner.run(suit)
-                run = bf(suit)  # 实例化BeautifulReport模块
+
+                # 实例化BeautifulReport模块
+                run = bf(suit)
                 run.report(filename='report_' + str(time.strftime("%Y-%m-%d_%H-%M",time.localtime())), description='烟草项目接口测试报告',report_dir=self.reportPath)
                 log.info(self.reportPath)
                 begin_time = run.begin_time
@@ -99,7 +101,7 @@ class AllTest:#
             log.error(str(ex))
 
         finally:
-            #清理环境, 发送测试邮件
+            # 清理环境, 发送测试邮件
             File().delete_file_backup(self.reportPath, 5)
             file1 = File().get_newest_file(self.reportPath)
             file2 = self.reportPath + '\\report.html'
@@ -110,7 +112,7 @@ class AllTest:#
             else:
                 log.info("邮件开关配置关闭，如需发送邮箱，请在配置文件配置打开")
             log.info("*********TEST END*********")
-            print("\n\n\n\n\n")
+            print("\n\n\n")
             print("用例执行结果如下：\n")
             print("总用例数: " + str(all_count))
             print("成功用例数: " + str(success_count))

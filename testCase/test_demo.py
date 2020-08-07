@@ -24,6 +24,7 @@ from common.logger import Logger
 
 log = Logger().file_log()
 global_var = OperationJson().get_data("data.json")
+global_var.update(Base().get_uploadfile_abspath("uploadFile.json"))
 
 xls_name = global_var['xls_name']
 sheet_name = global_var['sheet_name']
@@ -69,7 +70,7 @@ class api_test(unittest.TestCase):
 
     @data(*test_xls)
     @unpack
-    def test(self, case_id, case_description, url, method, is_header, header_uri, depand_case, depand_param, depand_key, body, is_run, httpCode, expect_res):
+    def test(self, case_id, case_description, url, method, is_header, header_uri, depand_case, depand_param, depand_key, body, is_run, httpCode, expect_res, uploadFile):
 
         if depand_param:
             expect_param_key_list = re.findall("(.+?)(?=\\=)", depand_param)
@@ -96,7 +97,7 @@ class api_test(unittest.TestCase):
         depand_skip_case_list = list(set(depand_case_list).intersection(set(self.skip_case)))
 
         if is_run == 'yes' and depand_fail_case_list == [] and depand_skip_case_list == []:
-            self.apiTest(case_id, case_description, url, method, is_header, header_uri, depand_key, body, httpCode, expect_res)
+            self.apiTest(case_id, case_description, url, method, is_header, header_uri, depand_key, body, httpCode, expect_res, uploadFile)
 
         elif is_run != 'yes':
             self.skip_case.append(case_id)
@@ -127,7 +128,7 @@ class api_test(unittest.TestCase):
         """
 
 
-    def apiTest(self, case_id, case_description, url, method, is_header, header_uri, depand_key, body, httpCode, expect_res):
+    def apiTest(self, case_id, case_description, url, method, is_header, header_uri, depand_key, body, httpCode, expect_res,uploadFile):
 
         log.info("**************" + case_id + ": " + case_description + ": Test Start**************")
         # 获取当前时间
@@ -157,7 +158,7 @@ class api_test(unittest.TestCase):
             header = OperationJson().get_header("token.json")
             log.info(header)
             if header_uri:
-                header['uri'] = header_uri
+                header.update(Base().key_values_to_dic(header_uri))
             res = self.run_method.run_main(method, url, body, header)
 
         # 接口不需要header，执行用例
@@ -197,7 +198,7 @@ class api_test(unittest.TestCase):
                 var_value = json.loads(res[0])
                 if var_value != []:
                     if '[' and ']' in param_value_list[i]:
-                        json_key_list =re.findall("(?<=\\[)(.+?)(?=\\])", param_value_list[i])
+                        json_key_list = re.findall("(?<=\\[)(.+?)(?=\\])", param_value_list[i])
                         var_value = json.loads(res[0])
                         for j in range(len(json_key_list)):
                             if json_key_list[j].isdigit():
@@ -216,13 +217,8 @@ class api_test(unittest.TestCase):
                 else:
                     global_var[param_key_list[i]] = ""
 
-
-
-
         global_var['res_indenx'] = 'digit'
         log.info("**************" + case_id + ": " + case_description + ": Test End**************")
-
-
 
 
 if __name__ == '__main__':

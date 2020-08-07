@@ -8,13 +8,11 @@
 #class： Base
 #function： Base().key_values_to_dic()
 
+
+from common import configPath
+from common.operationJson import OperationJson
 from common.logger import Logger
 log = Logger().file_log()
-
-import os
-import json
-import configPath
-
 
 class Base():
 
@@ -37,9 +35,22 @@ class Base():
                 log.error("键值对错误，转换失败....错误键值对信息：%s" % line)
         return key_values_dic_
 
+    def get_uploadfile_abspath(self,fileName):
+        """
+        将键值对转换为字典形式
+        :param : key_values_
+        :return: key_values_dic_
+        """
+
+        uploadfile_var = OperationJson().get_data(fileName)
+        for j in uploadfile_var.keys():
+            uploadfile_var[j] = configPath.base_dir + uploadfile_var[j]
+        return uploadfile_var
+
+
 
 
 if __name__ == '__main__':
-    data = Base().get_data()
+    data = Base().get_uploadfile_abspath("uploadFile.json")
     log.info(data)
 

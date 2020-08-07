@@ -43,6 +43,15 @@ class HandleUrlAndBody:
                     log.error("请求body的参数:" + var_list[i] + "没有值," + "无法获取完整body")
         return body
 
+    def handle_header(self, header):
+        if '=' in header:
+            headr = key_values_to_dic
+            for i in range(len(var_list)):
+                try:
+                    body = body.replace("${" + var_list[i] + "}", var_dict[var_list[i]])
+                except NameError:
+                    log.error("请求body的参数:" + var_list[i] + "没有值," + "无法获取完整body")
+        return body
 
 if __name__ == '__main__':
     header = {}

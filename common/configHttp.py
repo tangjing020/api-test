@@ -37,7 +37,7 @@ class RunMethod():
             result = result.json()
             #以字符串形式输出，ensure_ascii设置是否ascii编码，sort_keys设置a-z排序，indent设置缩进格式
             res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
-            log.info('methond: post, httpCode: %s, url: %s' % (http_code, url))
+            log.info('methond: post, httpCode: %s, url: %s,headers: %s' % (http_code, url,header))
             log.info('content={%s}' % data)
             log.info('response: %s' % res)
             return res,http_code
