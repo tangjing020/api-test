@@ -8,7 +8,7 @@
 # function：sort_file_by_time，get_newest_file，delete_file_backup
 
 import os
-import configPath
+from common import configPath
 from common.logger import Logger
 
 log = Logger().file_log()

@@ -7159,193 +7159,206 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 0,
+    "testPass": 1,
     "testResult": [
         {
             "className": "api_test",
             "methodName": "test_01",
             "description": "template_cource_login_01_登录",
-            "spendTime": "0.156 s",
-            "status": "失败",
+            "spendTime": "3.05 s",
+            "status": "成功",
             "log": [
-                "",
-                "Traceback (most recent call last):\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 146, in apiTest\n    raise e\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 126, in apiTest\n    self.assertEqual(httpCode, res[1])\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n",
-                "AssertionError: 20.0 != 200\n"
+                ""
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_02",
-            "description": "template_cource_add_02_添加课程模板",
+            "description": "class_get_unit_org_02_获取本单位",
             "spendTime": "0.0 s",
             "status": "跳过",
             "log": [
-                "template_cource_add_02: 依赖的用例（depand_case）template_cource_login_01运行失败或者未运行，导致用例不执行，跳过"
+                "class_get_unit_org_02: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_03",
-            "description": "template_cource_query_list_03_查询课程模板列表",
+            "description": "class_get_officeType_03_获取单位类型",
             "spendTime": "0.0 s",
             "status": "跳过",
             "log": [
-                "template_cource_query_list_03: is_run参数不为yes，用例不执行，跳过"
+                "class_get_officeType_03: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_04",
-            "description": "template_cource_edit_04_编辑课程模板",
+            "description": "plan_get_operator_type_04_查询账号培训模块的可操作权限",
             "spendTime": "0.0 s",
             "status": "跳过",
             "log": [
-                "template_cource_edit_04: is_run参数不为yes，用例不执行，跳过"
+                "plan_get_operator_type_04: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_05",
-            "description": "template_cource_query_05_查询课程模板列表",
+            "description": "plan_get_grant_org_05_查询本单位权限下部门",
             "spendTime": "0.0 s",
             "status": "跳过",
             "log": [
-                "template_cource_query_05: is_run参数不为yes，用例不执行，跳过"
+                "plan_get_grant_org_05: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_06",
-            "description": "template_cource_delete_06_删除课程模板",
+            "description": "plan_get_train_undertaker_06_获取承办单位",
             "spendTime": "0.0 s",
             "status": "跳过",
             "log": [
-                "template_cource_delete_06: 依赖的用例（depand_case）template_cource_add_02运行失败或者未运行，导致用例不执行，跳过"
+                "plan_get_train_undertaker_06: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_07",
-            "description": "template_cource_login_01_登录",
-            "spendTime": "0.141 s",
-            "status": "失败",
+            "description": "class_get_adviser_teacher_07_获取班主任信息",
+            "spendTime": "0.0 s",
+            "status": "跳过",
             "log": [
-                "",
-                "Traceback (most recent call last):\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 146, in apiTest\n    raise e\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 137, in apiTest\n    self.assertIn(check_list[i], res[0])\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 1179, in assertIn\n    self.fail(self._formatMessage(msg, standardMsg))\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 753, in fail\n    raise self.failureException(msg)\n",
-                "AssertionError: 'access_token' not found in '{\\n  \"firstUpdatePassword\": \"true\",\\n  \"userId\": \"6b63ae90-726c-11e6-99f3-00163e005637\"\\n}'\n"
+                "class_get_adviser_teacher_07: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_08",
-            "description": "template_cource_add_02_添加课程模板",
-            "spendTime": "0.0156 s",
-            "status": "错误",
+            "description": "plan_get_course_category_08_获取班级目录",
+            "spendTime": "0.0 s",
+            "status": "跳过",
             "log": [
-                "",
-                "Traceback (most recent call last):\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 116, in apiTest\n    header = OperationJson().get_header(\"token.json\")\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\operationJson.py\", line 27, in get_header\n    token = self.get_data(\"token.json\")[\"access_token\"]\n",
-                "KeyError: 'access_token'\n"
+                "plan_get_course_category_08: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_09",
-            "description": "template_cource_query_list_03_查询课程模板列表",
-            "spendTime": "0.0 s",
-            "status": "错误",
+            "description": "plan_get_train_categories_09_获取培训类别",
+            "spendTime": "0.000997 s",
+            "status": "跳过",
             "log": [
-                "",
-                "Traceback (most recent call last):\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 116, in apiTest\n    header = OperationJson().get_header(\"token.json\")\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\operationJson.py\", line 27, in get_header\n    token = self.get_data(\"token.json\")[\"access_token\"]\n",
-                "KeyError: 'access_token'\n"
+                "plan_get_train_categories_09: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_10",
-            "description": "template_cource_edit_04_编辑课程模板",
+            "description": "plan_get_train_mode_10_获取培训方式",
             "spendTime": "0.0 s",
-            "status": "错误",
+            "status": "跳过",
             "log": [
-                "",
-                "Traceback (most recent call last):\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 105, in apiTest\n    url = HandleUrlAndBody().handle_url(self.base_url, url, global_var)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\handleUrlAndBody.py\", line 31, in handle_url\n    url = url.replace(\"${\" + var_list[i] + \"}\", var_dict[var_list[i]])\n",
-                "KeyError: 'templateCourseId'\n"
+                "plan_get_train_mode_10: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_11",
-            "description": "template_cource_query_05_查询课程模板列表",
+            "description": "plan_get_train_level_11_获取培训级别",
             "spendTime": "0.0 s",
             "status": "跳过",
             "log": [
-                "template_cource_query_05: is_run参数不为yes，用例不执行，跳过"
+                "plan_get_train_level_11: is_run参数不为yes，用例不执行，跳过"
             ]
         },
         {
             "className": "api_test",
             "methodName": "test_12",
-            "description": "template_cource_delete_06_删除课程模板",
-            "spendTime": "0.0158 s",
-            "status": "错误",
+            "description": "plan_get_train_channel_12_获取培训渠道",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "plan_get_train_channel_12: is_run参数不为yes，用例不执行，跳过"
+            ]
+        },
+        {
+            "className": "api_test",
+            "methodName": "test_13",
+            "description": "plan_get_train_channel_13_获取自定义分类",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "plan_get_train_channel_13: is_run参数不为yes，用例不执行，跳过"
+            ]
+        },
+        {
+            "className": "api_test",
+            "methodName": "test_14",
+            "description": "plan_get_main_student_14_获取学员岗位",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "plan_get_main_student_14: is_run参数不为yes，用例不执行，跳过"
+            ]
+        },
+        {
+            "className": "api_test",
+            "methodName": "test_15",
+            "description": "plan_get_student_level_15_获取学员职级",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "plan_get_student_level_15: is_run参数不为yes，用例不执行，跳过"
+            ]
+        },
+        {
+            "className": "api_test",
+            "methodName": "test_16",
+            "description": "class_get_certificate_16_获取班级证书",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "class_get_certificate_16: is_run参数不为yes，用例不执行，跳过"
+            ]
+        },
+        {
+            "className": "api_test",
+            "methodName": "test_17",
+            "description": "class_add_noticefile_17_添加班级通知附件",
+            "spendTime": "0.248 s",
+            "status": "失败",
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
-                "  File \"D:\\python\\python3.8.1\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 73, in test\n    self.apiTest(case_id, case_description, url, method, is_header, depand_case, depand_key, body, is_run, httpCode, expect_res)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\testCase\\test_demo.py\", line 105, in apiTest\n    url = HandleUrlAndBody().handle_url(self.base_url, url, global_var)\n",
-                "  File \"E:\\学习\\唐菁\\自动化测试\\apiTest\\common\\handleUrlAndBody.py\", line 31, in handle_url\n    url = url.replace(\"${\" + var_list[i] + \"}\", var_dict[var_list[i]])\n",
-                "KeyError: 'templateCourseId'\n"
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"E:\\api-test\\common\\ddt.py\", line 211, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"E:\\api-test\\testCase\\test_demo.py\", line 100, in test\n    self.apiTest(case_id, case_description, url, method, is_header, header_uri, depand_key, body, httpCode, expect_res, uploadFile)\n",
+                "  File \"E:\\api-test\\testCase\\test_demo.py\", line 191, in apiTest\n    raise e\n",
+                "  File \"E:\\api-test\\testCase\\test_demo.py\", line 171, in apiTest\n    self.assertEqual(httpCode, res[1])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 200.0 != 500\n"
+            ]
+        },
+        {
+            "className": "api_test",
+            "methodName": "test_18",
+            "description": "class_get_class_time_config_03_获取班级时间配置",
+            "spendTime": "0.0 s",
+            "status": "跳过",
+            "log": [
+                "class_get_class_time_config_03: is_run参数不为yes，用例不执行，跳过"
             ]
         }
     ],
     "testName": "烟草项目接口测试报告",
-    "testAll": 12,
-    "testFail": 6,
-    "beginTime": "2020-06-20 09:52:11",
-    "totalTime": "1s",
-    "testSkip": 6,
+    "testAll": 18,
+    "testFail": 1,
+    "beginTime": "2020-08-09 14:22:59",
+    "totalTime": "4s",
+    "testSkip": 16,
     "testError": 0
 };
     function details(obj) {

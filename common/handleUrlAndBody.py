@@ -11,7 +11,7 @@ import re
 import os
 import json
 from common.logger import Logger
-import configPath
+from common import configPath
 
 log = Logger().file_log()
 class HandleUrlAndBody:

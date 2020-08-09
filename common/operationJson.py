@@ -9,7 +9,7 @@
 
 import os
 import json
-import configPath
+from common import configPath
 from common.logger import Logger
 
 log = Logger().file_log()

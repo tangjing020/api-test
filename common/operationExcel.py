@@ -10,7 +10,7 @@
 import os
 import xlrd
 from xlutils.copy import copy
-import configPath
+from common import configPath
 from common.logger import Logger
 
 log = Logger().file_log()

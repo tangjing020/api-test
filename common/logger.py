@@ -10,7 +10,7 @@
 
 import logging
 from logging.handlers import TimedRotatingFileHandler
-import configPath
+from common import configPath
 
 
 #import time

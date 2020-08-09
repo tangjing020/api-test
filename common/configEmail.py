@@ -14,7 +14,7 @@ import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
-import configPath
+from common import configPath
 from common.readConfig import ReadConfig
 from common.file import File
 from common.logger import Logger
